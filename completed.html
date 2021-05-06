@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed ✅</title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            text-align: center;
+            font-family: sans-serif;
+            width: 100%;
+            height: fit-content;
+            background: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        header {
+            background: rgb(0, 100, 255);
+            height: 10%;
+            min-height: 80px;
+            /* max-height: 120px; */
+            position: relative;
+            display: grid;
+            place-items: center;
+            color: white;
+            font-size: calc(0.6rem + 0.4vw);
+        }
+
+        header a {
+            width: calc(150px + 2vw);
+
+        }
+
+        header img {
+            width: 100%;
+        }
+
+
+        header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 40%;
+            transform: translateY(99%);
+            background: linear-gradient(to top left, transparent 50%, rgb(0, 100, 255) 50%);
+        }
+
+        .title {
+            margin-top: 15%;
+            font-size: calc(1.2rem + 0.3vw);
+            color: rgb(0, 100, 255);
+        }
+
+        .download-title {
+            font-size: calc(1rem + 0.3vw);
+            margin: 5% auto 0 auto;
+        }
+
+        .download-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: grey;
+            margin: 1rem auto 3rem auto;
+        }
+
+        .download-container {
+            display: flex;
+            padding: 1rem;
+            justify-content: center;
+            /* margin: 5rem 0; */
+        }
+
+        .download-container>* {
+            margin: 0 1rem;
+            width: calc(160px + 3vw);
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .download-container>*:hover {
+            transform: scale(1.05);
+        }
+
+        .download-container img {
+            width: 100%;
+        }
+
+
+
+
+
+        footer {
+            background: rgb(0, 100, 255);
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 1rem;
+
+        }
+
+
+        footer>* {
+            text-align: start;
+            flex: 0 1 300px;
+        }
+    </style>
+
+
+
+    <script type='application/javascript'>
+        (() => {
+            console.log('history', window.history);
+        })();
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href='https://frsapp.com/' target="_blank">
+            <img class='logo' alt='FRS Logo' src='https://frsapp.com/wp-content/uploads/2020/09/Faras-Logo-White.png' />
+        </a>
+    </header>
+    <h1 class='title'>Your Password Has Been Set Successfully ✔</h1>
+
+    <h2 class='download-title'>Download The Application</h2>
+
+
+    <div class='download-container'>
+        <a href='#'>
+            <img alt='IOS download logo'
+                src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Download_on_iTunes.svg/440px-Download_on_iTunes.svg.png' />
+        </a>
+
+        <a href='#'>
+            <img alt='Android download logo'
+                src='https://oodlins.com/wp-content/webpc-passthru.php?src=https://oodlins.com/wp-content/uploads/2020/05/download-playstore.png&nocache=1' />
+
+        </a>
+    </div>
+
+
+    <footer>
+        <div>
+            <h3>Quick Links</h3>
+            <h5>one</h5>
+            <h5>two</h5>
+            <h5>three</h5>
+        </div>
+        <div>
+            <h3>Contact Us</h3>
+            <h5>Email: <a>info@frsapp.com</a></h5>
+            <h5>Number: <a>+971 2 309 3880</a></h5>
+        </div>
+
+    </footer>
+</body>
+
+</html>
